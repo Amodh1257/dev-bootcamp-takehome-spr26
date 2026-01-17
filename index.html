@@ -3,35 +3,65 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="styles.css" />
+		<script src="app.js"></script>
 	</head>
 	<!-- Your HTML Here -->
 	<body>
 		<div class="container">
-			<div class="intro-card">
-				<div class="color-container">
-					<div class="gradient"></div>
-				</div>
+			<div class="intro-card" id="myCard" onclick="flipCard()">
+				<div class="card-inner" id="cardInner">
+					<div class="card-front">
+						<div class="color-container">
+							<div class="gradient"></div>
+						</div>
 
-				<div class="profile-picture">
-					<img
-						src="https://gatech.instructure.com/images/thumbnails/70306151/OWQ9JbM0Sftd8EmZAKpyloXSsaF9MLrmKneDEHM5"
-					/>
-				</div>
+						<div class="profile-picture">
+							<img
+								src="https://gatech.instructure.com/images/thumbnails/70306151/OWQ9JbM0Sftd8EmZAKpyloXSsaF9MLrmKneDEHM5"
+							/>
+						</div>
 
-				<div class="content">
-					<h1>Guy Fierri lol</h1>
+						<div class="content">
+							<h1><p class="name">Amodh Naik</p></h1>
 
-					<p class="title">
-						Place <br />
-						Computer Science Junor
-					</p>
+							<p class="title">
+								Georgia Tech <br />
+								Computer Science Junior
+							</p>
 
-					<p class="description">Lorem Ipsum Dolor Sit Amet</p>
+							<p class="description">
+								Welcome to my Intro card! <br />
+								Click to learn more about me!
+							</p>
+						</div>
+					</div>
 
-					<div class="contact-tray">
-						<a href="mailto:anaik99@gatech.edu" class="contact-link">✉️ Email</a>
-						<a href="https://linkedin.com/in/amodh-naik" class="contact-link">💼 Linkedin</a>
-						<a href="https://github.com/amodh1257" class="contact-link">💻 Github</a>
+					<div class="card-back">
+						<div class="content">
+							<p class="description">
+								Lorem Ipsum Dolor Sit Amet
+							</p>
+							<div class="contact-tray">
+								<a
+									href="mailto:anaik99@gatech.edu"
+									class="contact-link"
+									onclick="event.stopPropagation()"
+									>✉️ Email</a
+								>
+								<a
+									href="https://linkedin.com/in/amodh-naik"
+									class="contact-link"
+									onclick="event.stopPropagation()"
+									>💼 Linkedin</a
+								>
+								<a
+									href="https://github.com/amodh1257"
+									class="contact-link"
+									onclick="event.stopPropagation()"
+									>💻 Github</a
+								>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
