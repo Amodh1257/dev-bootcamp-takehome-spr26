@@ -120,13 +120,13 @@ body {
 	padding: 20px;
 }
 
-.name {
+h1 {
 	font-size: 1.5rem;
 	margin: 10px 0 5px 0;
 	color: #fff;
 }
 
-.name:hover {
+h1:hover {
 	transform: scale(1.05);
 }
 
